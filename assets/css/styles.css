@@ -44,6 +44,10 @@ a:hover {
     html {
         font-size: 1.33vw
     }
+    h1 {
+        margin-top: 30px;
+        font-size: 36px;        
+    }
 
     h3 {
         font-size: 2.13vw
@@ -76,16 +80,19 @@ button:active {
 }
 
 .ok-button {
-    background-color: #0c0;
-    box-shadow: 0 3px #090;
+    background-color: rgb(204, 0, 0);
+    box-shadow: 0 3px rgb(153, 10, 0);
 }
 
 .ok-button:hover {
-    background-color: #00e600
+    background-color: rgb(13, 153, 0);
+    box-shadow: 0 3px rgb(0, 153, 59);
+    transition: 0.4s;
 }
 
 .ok-button:active {
-    background-color: #0c0
+    background-color: rgb(13, 153, 0);
+    box-shadow: 0 3px rgb(0, 153, 59);
 }
 
 .ok-button-disabled {
@@ -356,7 +363,9 @@ header .item .phone span {
     }
 
     header .item .phone {
-        display: none
+        display: block;
+        font-size: 17px;
+        padding-bottom: 7px;
     }
 
     header .item .description {
@@ -454,7 +463,8 @@ header .item .phone span {
     }
 
     .hero h1 {
-        font-size: 8.53vw
+        font-size: 8.53vw;
+        padding-top: 15px;    
     }
 
     .hero h3 {
@@ -837,19 +847,16 @@ header .item .phone span {
     }
 
     .product .container {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        display: inline-block;
         padding-top: 6vw;
     }
 
-    .product .container .item {
-        flex: 0 0 auto;
-        width: 65vw;
+    .product .container .item {        
+        width: 80vw;
     }
 
     .product .container .item .description {
-        width: 80%;
+        width: 90%;
     }
 
     .product .container .item .description p {
@@ -866,7 +873,7 @@ header .item .phone span {
 
     .product .container .item .description img,
     .product .container .item .description button {
-        width: 52vw
+        width: 100%;
     }
 
     .product .container .item .description .only-for-desktop {
