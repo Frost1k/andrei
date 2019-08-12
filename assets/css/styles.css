@@ -70,6 +70,7 @@ button {
     text-align: center;
     text-decoration: none;
     color: inherit;
+    border-radius: 5px;
     outline: none;
     border: none;
     cursor: pointer;
