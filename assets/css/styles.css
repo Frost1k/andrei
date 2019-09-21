@@ -83,7 +83,7 @@ button {
     border-radius: 5px;
     outline: none;
     border: none;
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 button:active {
@@ -92,7 +92,7 @@ button:active {
 
 .ok-button {
     background-color: rgb(204, 0, 0);
-    box-shadow: 0 3px rgb(153, 10, 0);
+    box-shadow: 0 3px rgb(153, 10, 0);    
 }
 
 .ok-button:hover {
@@ -151,8 +151,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
-    z-index: 10;
+    color: #fff;    
+    z-index: 1
 }
 
 header .item {
@@ -1489,6 +1489,7 @@ a.btn {
 .modal-wrapper.open {
   opacity: 1;
   visibility: visible;
+  z-index: 999;
 }
 .modal {
   width: 500px;
@@ -1501,10 +1502,11 @@ a.btn {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #fafafa;  
+  z-index: 999;
 }
 @media (max-width:480px) {
     .modal {
-        width: 350px;
+        width: 100%;
         display: block;
         margin: 0 0 0 0px;
         position: relative;
@@ -1515,6 +1517,7 @@ a.btn {
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
         background: #fafafa;  
+        z-index: 999;
       }
 }
 .modal-wrapper.open .modal {
@@ -1573,6 +1576,7 @@ a.btn {
   padding: 10px 40px;
   max-width: 200px;
   margin: auto;
+  margin-bottom: 10px;
   border-radius: 5px;
   color: #fff;
   background-color: rgb(204, 0, 0);
