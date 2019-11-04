@@ -226,7 +226,7 @@ header .item .phone span {
     }
 
     header .item img {
-        width: 37.33vw
+        width: 37.33vw        
     }
 
     header .item .phone {
@@ -634,6 +634,16 @@ header .item .phone span {
     color: #fff
 }
 
+.product .container .item .description .img-height {
+    text-align: center;    
+    width: 100%;
+    
+}
+.product .container .item .description .img-height img {   
+    height: 270px;
+    width: 270px;
+}
+
 @media (min-width:1200px) {
     .product {
         padding: 40px 0 40px;
@@ -706,6 +716,10 @@ header .item .phone span {
     .product .container .item .description button {
         width: 27vw
     }
+    .product .container .item .description .img-height img {   
+        width: 27vw;
+        height: 27vw;
+    }
 }
 
 @media (max-width:480px) {
@@ -740,6 +754,9 @@ header .item .phone span {
 
     .product .container .item .description img,
     .product .container .item .description button {
+        width: 100%;
+    }
+    .product .container .item .description .img-height {   
         width: 100%;
     }
 
@@ -1283,6 +1300,9 @@ header .item .phone span {
 .footer .container .item .contact {
     margin: auto
 }
+.footer .container .item .contact .devices {
+    font-size: 9px;
+}
 
 @media (min-width:1200px) {
     .footer .container .item:first-child {
@@ -1304,7 +1324,7 @@ header .item .phone span {
     }
 
     .footer .container .item #map {
-        padding-top: 10px;
+        padding-top: 23px;
         width: 65vw;
         height: 350px
     }
